@@ -31,7 +31,7 @@ public class Main {
                         case 5:
                             System.out.println("Nhập số điện thoại để tìm: ");
                             String input3 = sc.nextLine();
-                            manager.findByPhoneNumber(input3);
+                            System.out.println(manager.findByPhoneNumber(input3));
                             break;
                         case 6:
                             manager.readFromFile();

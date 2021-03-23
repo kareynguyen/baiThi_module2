@@ -12,13 +12,13 @@ public class Manager {
                 System.out.println(list.get(i).display());
             }return;
         }else {
-            System.out.println("Không có sản phẩm nào");
+            System.out.println("Danh sách trống");
         }
     }
 
     public PhoneBook findByPhoneNumber(String phoneNumber) {
         for (int i = 0; i < list.size(); i++) {
-            if (phoneNumber == list.get(i).getPhoneNumber()) {
+            if (phoneNumber.equals(list.get(i).getPhoneNumber()) ) {
                 return list.get(i);
             }
         }
@@ -33,6 +33,7 @@ public class Manager {
             System.out.println("Đã thêm vào danh bạ");
         }
     }
+
 
     public boolean update(String phoneNumber) {
         for (int i = 0; i < list.size(); i++) {
